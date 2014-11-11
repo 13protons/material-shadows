@@ -44,5 +44,5 @@ MIT
 2014 by Alan Languirand
 
 [1]:http://www.google.com/design/spec/what-is-material/environment.html#environment-light-shadow
-[2]:https://github.com/alanguir/material-shadows/blob/master/material-shadow.css
+[2]:http://alanguir.github.io/material-shadows/styles/material-shadow.css
 [3]:http://alanguir.github.io/material-shadows/
