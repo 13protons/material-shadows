@@ -13,7 +13,7 @@ gulp.task('styles', function() {
           browsers: ['> 5%', 'last 5 versions', 'Firefox ESR', 'Opera 12.1', 'ios 6'],
           cascade: true
       }))
-    .pipe(minifyCSS({noAdvanced:true, keepSpecialComments: 0}))
+    //.pipe(minifyCSS({noAdvanced:true, keepSpecialComments: 0}))
     .pipe(gulp.dest('./styles/'));
 
 });

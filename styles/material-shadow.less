@@ -1,3 +1,31 @@
+/*****
+Material Shadow
+---------------
+
+A stylesheet to produce shadows on html elements that create subtle depth cues. Inspired by [google's material design](http://www.google.com/design/spec/what-is-material/environment.html#environment-light-shadow).
+
+http://alanguir.github.io/material-shadows/
+License: MIT
+2014 Alan Languirand
+
+******/
+
+/*
+
+Mixin to generate shadows
+
+If using the mixin directly in your .less stylesheet, remember to copy the transition style into your element's styles for animations.
+
+example:
+
+div {
+  transition: box-shadow .2s ease;
+  .shadow(2);
+  &:hover { .shadow(5) }
+}
+
+*/
+
 .shadow(@height){
     @h1: unit(@height, px);
     @h: round(pow(@h1,1.1));
@@ -5,11 +33,29 @@
                 0px 0px @h fade(black, max(unit(25 - unit(@h*2), %), 5%));
 }
 
+/*
+Recursive mixin to generate shadow classes
+
+This allows you to use shadow classes in your html from the compiled stylesheet
+
+example:
+
+<div class="shadow-2 shadow-active-5">...</div>
+
+Basic Usage
+
+.shadow-[number] sets the 'resting' shadow for an element.
+.shadow-active-[number] is the shadow height animated to on element `:hover`
+
+*/
+
 .loop(@counter) when (@counter > 0) {
   .shadow-@{counter} {.shadow(@counter);}
   .shadow-active-@{counter} {&:hover{.shadow(@counter);}}
   .loop((@counter - 1));    // next iteration
 }
 .loop(10); // launch the loop
+
+/* Apply a box shadow transition to all shadow classes */
 
 [class *= "shadow-"] { transition: box-shadow .2s ease; }
