@@ -9,21 +9,34 @@ License: MIT
 2014 Alan Languirand
 
 ******/
-
 /*
-Basic Usage
------------
 
-Add the shadow-[level] class to an element, where level is some integer 1-10, with 10 being the highest 'above' that element's ground plane.
+Mixin to generate shadows
 
-<div class="shadow-1">...</div>
+If using the mixin directly in your .less stylesheet, remember to copy the transition style into your element's styles for animations.
 
-Add movement
-------------
+example:
 
-Use the shadow-active-[level] class with a shadow-[level] class to define the resting and :hover states of the shadow. Shadows will transition up to (or down to) the height specificed by the active class, then back again.
+div {
+  transition: box-shadow .2s ease;
+  .shadow(2);
+  &:hover { .shadow(5) }
+}
+
+*/
+/*
+Recursive mixin to generate shadow classes
+
+This allows you to use shadow classes in your html from the compiled stylesheet
+
+example:
 
 <div class="shadow-2 shadow-active-5">...</div>
+
+Basic Usage
+
+.shadow-[number] sets the 'resting' shadow for an element.
+.shadow-active-[number] is the shadow height animated to on element `:hover`
 
 */
 .shadow-10 {
@@ -86,9 +99,7 @@ Use the shadow-active-[level] class with a shadow-[level] class to define the re
 .shadow-active-1:hover {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.24), 0px 0px 1px rgba(0, 0, 0, 0.23);
 }
-
 /* Apply a box shadow transition to all shadow classes */
-
 [class*="shadow-"] {
   -webkit-transition: box-shadow 0.2s ease;
           transition: box-shadow 0.2s ease;
