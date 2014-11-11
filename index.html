@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" ng-app="zetta">
+  <head>
+    <title>Material Shadow</title>
+    <meta charset="utf-8" />
+    <meta name="fragment" content="!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
+    <link rel="stylesheet" type="text/css" href="styles/material-shadow.css" />
+
+  </head>
+  <body>
+    <header class="shadow-2 shadow-active-5">
+      <section class="content">
+      <h1>Material Shadow</h1>
+      <p>A stylesheet to produce shadows on html elements that create subtle depth cues. Inspired by <a href="http://www.google.com/design/spec/what-is-material/environment.html#environment-light-shadow">google's material design.</a>
+      </section>
+    </header>
+    <article>
+      <section class="content pure-g">
+        <div class="placard pure-u-1">
+          <div class="content shadow-1">
+            <h2>Basic Usage</h2>
+            <p>Add a class of <code>shadow-[number]</code>, where <code>[number]</code> is an integer from <code>1-10</code> that represents an object's distance from it's ground plane.</p>
+            <div class="demo pure-u-1-4 shadow-1"><code>.shadow-1</code></div>
+            <div class="demo pure-u-1-4 shadow-3"><code>.shadow-3</code></div>
+            <div class="demo pure-u-1-4 shadow-5"><code>.shadow-5</code></div>
+          </div>
+        </div>
+        <div class="placard pure-u-1">
+          <div class="content shadow-1 shadow-active-5">
+            <h2>Add movement</h2>
+            <p>You can specify an 'active' shadow that is transitioned to when an element is being <code>:hover</code>ed over. Add this as another class, <code>shadow-active-[number]</code></p>
+            <p>Hover over these elements to see the effect:</p>
+            <div class="demo pure-u-1-3 shadow-2 shadow-active-5">
+              <code>.shadow-2</code><br/>
+              <code>.shadow-active-5</code>
+            </div>
+            <div class="demo pure-u-1-3 shadow-2 shadow-active-7">
+              <code>.shadow-2</code><br/>
+              <code>.shadow-active-7</code>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>
