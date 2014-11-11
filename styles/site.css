@@ -27,8 +27,7 @@ body {
   background-color: #fccb56;
   margin: 0;
   padding: 0;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 a {
   color: #225b66;
@@ -65,8 +64,17 @@ header {
   padding: .5em;
   border-radius: .2em;
 }
+.placard p {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 1em 0;
+}
+.placard p.pure-u-1-3 {
+  text-align: center;
+}
 .round_button {
   background-color: #8dbf67;
+  display: inline-block;
   color: #fff;
   font-size: 4rem;
   width: 4rem;
