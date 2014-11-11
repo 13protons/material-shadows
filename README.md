@@ -10,11 +10,8 @@ A stylesheet to produce shadows on html elements that create subtle depth cues. 
 Download the library
 ====================
 
-[material-shadow.css][2]
+[material-shadow.zip][2] - .css is tiny at 275 bytes. Also includes `.less` source file. 
 
--or-
-
-[material-shadow.less]
 
 Demo
 ====
@@ -48,6 +45,5 @@ MIT
 2014 by Alan Languirand
 
 [1]:http://www.google.com/design/spec/what-is-material/environment.html#environment-light-shadow
-[2]:http://alanguir.github.io/material-shadows/styles/material-shadow.css
+[2]:http://alanguir.github.io/material-shadows/material-shadow.zip
 [3]:http://alanguir.github.io/material-shadows/
-[4]:http://alanguir.github.io/material-shadows/styles/material-shadow.less
