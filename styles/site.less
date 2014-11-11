@@ -20,6 +20,10 @@ body {
   line-height: 2rem;
 
 }
+a {
+  color: @dark-blue;
+  &:hover {color: @yellow;}
+  }
 header {background-color: #fff;}
 .content {
   max-width: 48rem;
@@ -38,19 +42,34 @@ header {background-color: #fff;}
   }
   .demo {padding: .5em; border-radius: .2em;}
 }
+.round_button {
+  background-color: @green;
+  color: #fff;
+  font-size: 4rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 3.4rem;
+  border-radius: 2em;
+  text-align: center;
+  font-weight: 700;
+}
+pre{
+  box-sizing: border-box;
+  background-color: @gray_80;
+  border-radius: .2rem;
+  padding: .5em 1em;
 
-.unit {
-    padding: 1rem;
-    margin: 1rem;
-    width: 8rem;
-    height: 5rem;
-    display: inline-block;
-    background-color: white;
-    text-align: center;
-
-    border-top: 1px solid fade(black, 10%);;
-    border-bottom: 1px solid fade(black, 40%);;
-    border-radius: 3px;
+  code {
+    color: #fff;
+  }
+}
+p.credit {text-align: center;}
+.pure-button.download {
+  background-color: @yellow;
+  color: @gray_80;
+  &:hover {
+    color: #000;
+  }
 }
 
 .body_font() {

@@ -19,7 +19,9 @@
     <header class="shadow-2 shadow-active-5">
       <section class="content">
       <h1>Material Shadow</h1>
-      <p>A stylesheet to produce shadows on html elements that create subtle depth cues. Inspired by <a href="http://www.google.com/design/spec/what-is-material/environment.html#environment-light-shadow">google's material design.</a>
+      <p>A stylesheet to produce shadows on html elements that create subtle depth cues. Inspired by <a href="http://www.google.com/design/spec/what-is-material/environment.html#environment-light-shadow">google's material design.</a><br/><br/>
+        <a class="pure-button download shadow-2 shadow-active-6">Download</a> 1.6kb  <a href="">View on Github</a>
+      </p>
       </section>
     </header>
     <article>
@@ -27,16 +29,23 @@
         <div class="placard pure-u-1">
           <div class="content shadow-1">
             <h2>Basic Usage</h2>
-            <p>Add a class of <code>shadow-[number]</code>, where <code>[number]</code> is an integer from <code>1-10</code> that represents an object's distance from it's ground plane.</p>
+            <p>Add the <code>shadow-[level]</code> class to an element, where <code>level</code> is some integer 1-10, with 10 being the highest 'above' that element's ground plane.</p>
+
+            <pre class="pure-u-1"><code>&lt;div class="shadow-1"&gt;...&lt;/div&gt;</code></pre>
+
             <div class="demo pure-u-1-4 shadow-1"><code>.shadow-1</code></div>
             <div class="demo pure-u-1-4 shadow-3"><code>.shadow-3</code></div>
             <div class="demo pure-u-1-4 shadow-5"><code>.shadow-5</code></div>
+
           </div>
         </div>
         <div class="placard pure-u-1">
           <div class="content shadow-1 shadow-active-5">
             <h2>Add movement</h2>
-            <p>You can specify an 'active' shadow that is transitioned to when an element is being <code>:hover</code>ed over. Add this as another class, <code>shadow-active-[number]</code></p>
+            <p>Use the <code>shadow-active-[level]</code> class <strong>with</strong> a <code>shadow-[level]</code> class to define the resting and <code>:hover</code> states of the shadow. Shadows will transition up to (or down to) the height specificed by the <code>active</code> class, then back again. </p>
+
+            <pre class="pure-u-1"><code>&lt;div class="shadow-2 shadow-active-5"&gt;...&lt;/div&gt;</code></pre>
+
             <p>Hover over these elements to see the effect:</p>
             <div class="demo pure-u-1-3 shadow-2 shadow-active-5">
               <code>.shadow-2</code><br/>
@@ -50,7 +59,25 @@
 
           </div>
         </div>
+
+        <div class="placard pure-u-1">
+          <div class="content shadow-1 shadow-active-5">
+            <h2>Use On Any Element</h2>
+            <p>You can use <code>shadow-</code> classes on any element to achieve a wide variety of effects</p>
+            <p>
+              <button class="pure-button pure-button-primary shadow-2 shadow-active-6">On a Button</button>
+              <div class="round_button shadow-2 shadow-active-6">+</div>
+              <br/>
+              <img
+                class="pure-image pure-u-1-2 shadow-2 shadow-active-8"
+                src="http://www.thedahl.org/uploads/2/9/0/8/2908437/9949850_orig.jpg"
+                />
+            </p>
+          </div>
+        </div>
+
       </section>
+      <p class="credit">2014 Alan Languirand. <a href="">View on Github</a>
     </article>
   </body>
 </html>
