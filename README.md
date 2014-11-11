@@ -12,6 +12,10 @@ Download the library
 
 [material-shadow.css][2]
 
+-or-
+
+[material-shadow.less]
+
 Demo
 ====
 
@@ -46,3 +50,4 @@ MIT
 [1]:http://www.google.com/design/spec/what-is-material/environment.html#environment-light-shadow
 [2]:http://alanguir.github.io/material-shadows/styles/material-shadow.css
 [3]:http://alanguir.github.io/material-shadows/
+[4]:http://alanguir.github.io/material-shadows/styles/material-shadow.less
