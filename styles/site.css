@@ -24,7 +24,8 @@ h1 {
   font-weight: 700;
 }
 body {
-  background-color: #fccb56;
+  background: -webkit-linear-gradient(#fccb56, #feeaba);
+  background: linear-gradient(#fccb56, #feeaba);
   margin: 0;
   padding: 0;
   line-height: 1.5rem;
@@ -63,6 +64,7 @@ header {
 .placard .demo {
   padding: .5em;
   border-radius: .2em;
+  margin: .5em 1em;
 }
 .placard p {
   box-sizing: border-box;

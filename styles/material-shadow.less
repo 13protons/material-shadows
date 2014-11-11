@@ -50,8 +50,8 @@ Basic Usage
 */
 
 .loop(@counter) when (@counter > 0) {
-  .shadow-@{counter} {.shadow(@counter);}
-  .shadow-active-@{counter} {&:hover{.shadow(@counter);}}
+  .shadow-@{counter} {.shadow(@counter); }
+  .shadow-active-@{counter} {.shadow(@counter); &:hover{.shadow(@counter);}}
   .loop((@counter - 1));    // next iteration
 }
 .loop(10); // launch the loop
