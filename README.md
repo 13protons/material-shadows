@@ -1,25 +1,21 @@
-material-shadows
+Material-Shadows
 ================
-
-Shadow styles inspired by googles material design
-Material Shadow
----------------
 
 A stylesheet to produce shadows on html elements that create subtle depth cues. Inspired by [google's material design][1].
 
 Download the library
-====================
+--------------------
 
-[material-shadow.zip][2] - .css is tiny at 275 bytes. Also includes `.less` source file. 
+[material-shadow.zip][2] - .css is tiny at 275 bytes. Also includes `.less` source file.
 
 
 Demo
-====
+----
 
 See a [live demo][3] of material shadow.
 
 Basic Usage
-===========
+-----------
 
 Add the `shadow-[level]` class to an element, where `level` is some integer 1-10, with 10 being the highest 'above' that element's ground plane.
 
@@ -28,7 +24,7 @@ Add the `shadow-[level]` class to an element, where `level` is some integer 1-10
 ```
 
 Animated Transitions
-====================
+--------------------
 
 Use the `shadow-active-[level]` class **with** a `shadow-[level]` class to define the resting and `:hover` states of the shadow. Shadows will transition up to (or down to) the height specificed by the `active` class, then back again.  
 
