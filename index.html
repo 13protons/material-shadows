@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Material Shadows Example</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href="material-shadow.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: 'Fira Sans', sans-serif;
+      }
+      section {
+        float: left;
+        clear: both;
+      }
+      section h1 {
+        margin-left: .6em;
+      }
+      section h3, section p {
+        margin-left: 1em;
+      }
+      div[class^=shadow-] {
+        padding: 1em;
+        min-height: 100px;
+        margin: 1em;
+        width: 15%;
+        min-width: 100px;
+        box-sizing: border-box;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Material Shadows</h1>
+      <p>A tiny library to give you the depth of sheets in google's material design, plus hover states for calling out active content and adding pizzaz to buttons</p>
+    </section>
+    <section>
+      <h3>Static Shadows</h3>
+      <div class="shadow-1"><p>Shadow 1</p></div>
+      <div class="shadow-2"><p>Shadow 2</p></div>
+      <div class="shadow-3"><p>Shadow 3</p></div>
+      <div class="shadow-4"><p>Shadow 4</p></div>
+      <div class="shadow-5"><p>Shadow 5</p></div>
+      <div class="shadow-6"><p>Shadow 6</p></div>
+      <div class="shadow-7"><p>Shadow 7</p></div>
+      <div class="shadow-8"><p>Shadow 8</p></div>
+      <div class="shadow-9"><p>Shadow 9</p></div>
+      <div class="shadow-10"><p>Shadow 10</p></div>
+    </section>
+    <section>
+      <h3>Active Shadows (hover to see effect)</h3>
+      <div class="shadow-1 shadow-active-10"><p>Shadow 1, <br/>Active 10</p></div>
+      <div class="shadow-2 shadow-active-9"><p>Shadow 2, <br/>Active 9</p></div>
+      <div class="shadow-3 shadow-active-8"><p>Shadow 3, <br/>Active 8</p></div>
+      <div class="shadow-4 shadow-active-7"><p>Shadow 4, <br/>Active 7</p></div>
+      <div class="shadow-5 shadow-active-6"><p>Shadow 5, <br/>Active 6</p></div>
+      <div class="shadow-6 shadow-active-5"><p>Shadow 6, <br/>Active 5</p></div>
+      <div class="shadow-7 shadow-active-4"><p>Shadow 7, <br/>Active 4</p></div>
+      <div class="shadow-8 shadow-active-3"><p>Shadow 8, <br/>Active 3</p></div>
+      <div class="shadow-9 shadow-active-2"><p>Shadow 9, <br/>Active 2</p></div>
+      <div class="shadow-10 shadow-active-1"><p>Shadow 10, <br/>Active 1</p></div>
+    </section>
+  </body>
+</html>

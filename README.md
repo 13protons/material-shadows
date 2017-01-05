@@ -3,16 +3,17 @@ Material-Shadows
 
 A stylesheet to produce shadows on html elements that create subtle depth cues. Inspired by [google's material design][1].
 
+![example](example.png)
+
 Download the library
 --------------------
 
-[material-shadow.zip][2] - .css is tiny at 275 bytes. Also includes `.less` source file.
-
+Clone this libarary or just download material-shadow.css - it's tiny at just 275 bytes. Also includes `.less` source file.
 
 Demo
 ----
 
-See a [live demo][3] of material shadow.
+See a [live demo][2] of material shadow.
 
 Basic Usage
 -----------
@@ -32,7 +33,7 @@ Use the `shadow-active-[level]` class **with** a `shadow-[level]` class to defin
 <div class="shadow-2 shadow-active-5">...</div>
 ```
 
-See a [live demo][3] of material shadow.
+See a [live demo][2] of material shadow.
 
 ###License
 
@@ -41,5 +42,4 @@ MIT
 2014 by Alan Languirand
 
 [1]:http://www.google.com/design/spec/what-is-material/environment.html#environment-light-shadow
-[2]:http://alanguir.github.io/material-shadows/material-shadow.zip
-[3]:http://alanguir.github.io/material-shadows/
+[2]:http://alanguir.github.io/material-shadows/
